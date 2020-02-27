@@ -1,0 +1,29 @@
+.section__header{
+    background-color: $color-gray;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    font-size: 1.6rem;
+    padding: 1rem 6rem;
+    .logo-wrapper{
+        text-align: center;
+        span{
+            color: white;
+        }
+        
+    }
+
+    .header-list{
+        display: flex;
+        align-items: center;
+        &__item{
+            color: white !important;
+            padding: 0 5rem;
+            &--right{
+                flex-grow: 1;
+                text-align: right;
+            }
+        }
+
+
+    }
+}

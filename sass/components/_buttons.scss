@@ -1,0 +1,17 @@
+.btn {
+
+    outline: none;
+    color: inherit;
+    text-decoration: none;
+    &--yellow{
+        font-weight: 500;
+        color: white;
+        background: $color-orange;
+        font-size: 36px;
+        width: 55rem;
+        display: block;
+        text-align: center;
+        padding: 1rem 5rem;
+    }
+
+}
