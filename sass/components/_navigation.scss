@@ -1,0 +1,27 @@
+.navigation{
+    background: $color-gray;
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 15%;
+    padding: 2rem 5rem;
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 4rem;
+    -webkit-animation: slide-bottom 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+    &__section{
+        margin-bottom: 3rem;
+
+        ul{
+            list-style: none;
+            li{
+                margin-top: 0.5rem;
+                font-size: 1.6rem;
+            }
+        }
+
+    }
+}

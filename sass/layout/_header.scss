@@ -1,42 +1,42 @@
-.section__header{
+.section__header {
     background-color: $color-gray;
     display: grid;
     grid-template-columns: 10% 90%;
     font-size: 1.6rem;
     padding: 1rem 6rem;
-    @include breakpoint(tablet){
+    @include breakpoint(tablet) {
         padding: 1rem 3.5rem;
         grid-template-columns: 20% 80%;
-
     }
-    .logo-wrapper{
+    .logo-wrapper {
         text-align: center;
         width: 100%;
-        span{
+        span {
             color: white;
             width: 100%;
-
         }
-        
     }
 
-    .header-list{
+    .header-list {
         display: flex;
         align-items: center;
         width: 100%;
-        &__item{
-            color: white !important;
+        &__item {
+            color: white ;
             padding: 0 5rem;
+            cursor: pointer;
+            transition: all 0.4s ease;
             @include breakpoint(tablet) {
-            padding: 0 1rem;
-
+                padding: 0 1rem;
             }
-            &--right{
+            &--right {
                 flex-grow: 1;
                 text-align: right;
             }
+            &:hover{
+                color: $color-blue;
+                font-weight: 500;
+            }
         }
-
-
     }
 }

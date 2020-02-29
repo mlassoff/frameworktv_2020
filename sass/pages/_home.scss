@@ -5,6 +5,7 @@
     @include breakpoint(tablet) {
         padding: 1rem 3.5rem;
     }
+    
     &--blue {
         background-color: $color-blue;
     }
