@@ -8,15 +8,40 @@ html,
 }
 
 html{
-
-    font-size: 62.5%;
-
-
     *{
         font-family: $roboto-font;
     }
+    font-size: 62.5%;
+
+    @include breakpoint(tablet){
+        font-size: 56.5%; // 9px
+    }
+
+    @include breakpoint(mobilerotate){
+        font-size: 50%; // 8px
+    }
+
+    @include breakpoint(mobile){
+        font-size: 45%; // 7px
+    }
+
 }
  
 body {
     overflow-x: hidden;
 } 
+
+
+.bold{
+    font-weight: 500;
+}    
+.white{
+    color: white;
+    text-align: center;
+}
+.blue{
+    color: $color-blue;
+}
+.center{
+    text-align: center;
+}
