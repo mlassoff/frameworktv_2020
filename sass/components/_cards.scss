@@ -1,0 +1,30 @@
+.image-cards {
+    margin-top: 3rem;
+    display: grid;
+    column-gap: 9rem;
+    row-gap: 3rem;
+
+    &--4 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        @include breakpoint(tablet) {
+    column-gap: 5rem;
+
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+    &--2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+        p {
+            text-align: left;
+        }
+    }
+}
