@@ -2,6 +2,8 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 1rem 6rem;
+
+    
     @include breakpoint(tablet) {
         padding: 1rem 3.5rem;
     }
@@ -49,17 +51,6 @@
             @include breakpoint(tablet) {
                 width: 95%;
             }
-        }
-    }
-
-    &__sponsors {
-        background: white;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        span {
-            font-size: 2rem;
         }
     }
 
