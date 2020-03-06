@@ -111,6 +111,10 @@ p {
   font-weight: 500;
 }
 
+.normal {
+  font-weight: 400;
+}
+
 .light {
   font-weight: 300;
 }
@@ -244,6 +248,21 @@ p {
 
 .sponsors span {
   font-size: 2rem;
+}
+
+.roku-ad {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  margin-top: 1.5rem !important;
+  color: #424242;
+}
+
+.roku-ad__description > *:not(:last-child) {
+  margin-bottom: 3rem;
 }
 
 .section__header {

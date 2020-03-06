@@ -1,0 +1,20 @@
+.roku-ad{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  margin-top: 1.5rem !important;
+  color: $color-gray;
+
+  img{
+
+  }
+  &__description{
+    
+    & >*:not(:last-child){
+      margin-bottom: 3rem;
+    }
+
+
+  }
+}
