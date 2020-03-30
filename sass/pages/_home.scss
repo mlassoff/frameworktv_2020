@@ -109,6 +109,10 @@
             font-weight: 500;
             font-size: 2.8rem;
             color: $color-gray;
+            &.normal{
+                font-weight: 400;
+
+            }
         }
         a {
             width: 100%;
