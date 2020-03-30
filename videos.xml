@@ -1,0 +1,23 @@
+<videos>
+    <video>
+        <title></title>
+        <url></url>
+        <shortDescription></shortDescription>
+        <longDescription></longDescription>
+        <releaseDate></releaseDate>
+        <media>
+            <videoUrl></videoUrl>
+            <imageUrl></imageUrl>
+        </media>
+        <cast>
+            <name></name>
+            <bio></bio>
+        </cast>
+        <links>
+            <link>
+                <linkName></linkName>
+                <linkUrl></linkUrl>
+            </link>
+        </links>
+    </video>
+</videos>

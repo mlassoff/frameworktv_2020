@@ -1,0 +1,23 @@
+{
+   "video": {
+      "title": [],
+      "url": [],
+      "shortDescription": [],
+      "longDescription": [],
+      "releaseDate": [],
+      "media": {
+         "videoUrl": [],
+         "imageUrl": []
+      },
+      "cast": {
+         "name": [],
+         "bio": []
+      },
+      "links": {
+         "link": {
+            "linkName": [],
+            "linkUrl": []
+         }
+      }
+   }
+}
