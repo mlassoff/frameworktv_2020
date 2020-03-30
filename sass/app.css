@@ -519,7 +519,7 @@ p {
 
 .section__video {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 42%;
   overflow: hidden;
   height: auto;
 }
