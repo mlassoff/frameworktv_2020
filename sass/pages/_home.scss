@@ -37,7 +37,7 @@
         }
         .hero-content {
             height: 100%;
-            color: white !important;
+            color: $color-white !important;
             width: 60%;
             display: flex;
             flex-direction: column;
@@ -126,7 +126,7 @@
     }
     &__footer {
         background-color: $color-gray;
-        color: white;
+        color: $color-white;
     }
     &__copyright {
         text-align: center;

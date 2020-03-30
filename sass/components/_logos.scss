@@ -1,20 +1,30 @@
 .sponsors {
-    background: white;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-
-    &>*{
-        margin-right: 4rem;
-        margin-top: 1rem;
-    }
-    img {
-        
-    }
-
+    color: $color-white;
     span {
-        font-size: 2rem;
+        font-size: 3rem;
+        color: rgba(0,0,0,.7);
+        display: block;
+        text-align: center;
+        position: relative;
+        padding-bottom: 15px;
+        &::before{
+            position: absolute;
+            bottom: 0;
+            left: 42%;
+            content: '';
+            width: 200px;
+            height: 6px;
+            background-color: $color-orange;
+        }
+
+    }
+    &__images{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        img{
+
+        }
     }
 }
