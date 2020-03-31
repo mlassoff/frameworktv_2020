@@ -10,10 +10,12 @@
 *       code_lab            Code Lab
 */
 
-let cat_coding = [];
-let cat_coding_projects = [];
+
 let cat_new_releases = [];
-const categories = [cat_new_releases, cat_codeing, cat_coding_projects];
+let cat_coding = [];
+let cat_design = [];
+const categories = [cat_new_releases, cat_coding, cat_design];
+const cat_names = ["cat_new_releases", "cat_coding", "cat_design"];
 
 
 window.onload = function(){
@@ -28,7 +30,6 @@ window.onload = function(){
 }
 
 function parseVideos(videos){
-    
         for(x in videos){
             let tags = videos[x].tags;
             for(y in tags){
@@ -39,28 +40,36 @@ function parseVideos(videos){
                     case "coding":
                         cat_coding.push(videos[x]);
                         break;
-                    case "coding_projects":
-                        cat_coding_projects.push(videos[x]);
+                    case "design":
+                        cat_design.push(videos[x]);
                         break;
                 }
             }
         }
-    populatePage();
+    populateCategories();
 }
 
-function populatePage() {
+function populateCategories(){
+    for(z in cat_names){
+        console.log(cat_names[z]);
+        out = populatePage(categories[z]);
+        document.getElementById(cat_names[z]).innerHTML = out;
+    }
+}
+
+function populatePage(category) {
     let out = "";
-    console.log(cat_new_releases);
-    shuffle(cat_new_releases)
+    console.log(category);
+    shuffle(category)
     for(x=0; x < 4; x++){
-        const imageURL = cat_new_releases[x].id + ".png";
-        const title = cat_new_releases[x].title;
+        const imageURL = category[x].id + ".png";
+        const title = category[x].title;
         out += "<div class='card'>";
         out += "<img src = 'img/" + imageURL + "' alt='" + title + "'/>";
         out += "<p>" + title + "</p>";
         out += "</div>";
     }
-    document.getElementById('new_releases').innerHTML = out;
+    return(out);
 }
 
 function shuffle(array) {

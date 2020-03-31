@@ -2,7 +2,6 @@
 const programs = document.getElementById('programs')
 const programsNavigation = document.getElementById('programs-navigation')
 programs.addEventListener("mouseenter", event => {
-    console.log('aeeeeeeee')
     programsNavigation.style.display = 'grid'
 })
 programsNavigation.addEventListener("mouseleave", event => {
