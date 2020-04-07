@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Video Manager</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="Video.js"></script>
+        <script src="video_manager.js"></script>
+        <style>
+            #header, #footer{
+                height: 30px;
+                text-align: center;
+            }
+            
+            #videoImage{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-role="page" id="master">
+	       <div data-role="header" id="header">Framework Television Video Manager</div>
+	       <div role="main" class="ui-content">
+                <ul data-role="listview" id="listview" data-filter="true" data-filter-placeholder="Search videos..." data-inset="true"></ul>
+            </div>
+	       <div data-role="footer" id="footer">Framework Television</div>
+        </div>
+        
+        <div data-role="page" id="detail">
+            <div data-role="header" id="header">Framework Television Video Manager</div>
+                <div role="main" class="ui-content">
+                    <img id="videoImage" />
+                    <form>
+                        <label for="id">ID</label>
+                        <input type="text" id="id" disabled/>
+                        <label for="title">Title</label>
+                        <input type="text" id="title" />
+                        <label for="description">Description</label>
+                        <textarea id="description"></textarea>
+                        <label for="tags">Tags</label>
+                        <input type="text" id="tags"/>
+                    </form>
+                    <button id="btnSave">Save</button>
+                    <button id="btnCancel">Cancel</button>
+                </div>
+            <div data-role="footer" id="footer">Framework Television</div>
+        </div>
+    </body>
+</html>
+    
