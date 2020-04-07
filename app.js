@@ -12,7 +12,7 @@ programsNavigation.addEventListener("mouseleave", event => {
 
 
 const person = document.getElementById('person')
-const randomNumber = Math.ceil(Math.random() * 3)
+const randomNumber = Math.ceil(Math.random() * 4)
 person.src = `./img/person-${randomNumber}.png`
 
 
